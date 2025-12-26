@@ -7,8 +7,8 @@ export const siteConfig = {
   // SITE METADATA & SEO
   // ============================================
   site: {
-    name: 'AI Agent Platform',
-    title: 'AI Agent Platform - Intelligent Automation for Modern Teams',
+    name: 'ARISAL DIGITAL',
+    title: 'ARISAL DIGITAL - SOLUTION TO ALL OF YOUR DIGITAL SOLUTION',
     description:
       'Transform your business with autonomous AI agents. Automate workflows, integrate seamlessly, and scale effortlessly. Start free today.',
     keywords:
@@ -16,12 +16,13 @@ export const siteConfig = {
     email: 'hello@aiagentplatform.com',
 
     // Open Graph / Twitter
-    ogTitle: 'AI Agent Platform - Intelligent Automation',
+    ogTitle: 'ARISAL DIGITAL - Intelligent Automation',
     ogDescription:
       'Transform your business with autonomous AI agents that work 24/7',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'AI Agent Platform',
-    twitterDescription: 'Intelligent automation for modern teams',
+    twitterTitle: 'ARISAL DIGITAL',
+    twitterDescription: 'SOLUTION TO ALL OF YOUR DIGITAL SOLUTION',
+    logo: '/logo.png'
   },
 
   // ============================================
@@ -44,18 +45,18 @@ export const siteConfig = {
   // HERO SECTION
   // ============================================
   hero: {
-    headline: 'Intelligent AI Agents',
-    subheadline: 'Built for Your Business',
+    headline: 'Creating Meaningful',
+    subheadline: 'Digital Experiences',
     description:
-      'Transform your workflow with autonomous AI agents that handle complex tasks, learn from your data, and deliver results 24/7. No coding required.',
+      'We build fast, responsive, and visually stunning websites that help businesses grow online.',
     cta: {
       primary: {
-        text: 'Get Started Free',
+        text: 'Get Started',
         href: '#contact',
       },
       secondary: {
-        text: 'See How It Works',
-        href: '#how-it-works',
+        text: 'Our Portofolio',
+        href: '#features',
       },
     },
     stats: [
@@ -98,7 +99,7 @@ export const siteConfig = {
   // ============================================
   testimonials: {
     title: 'Loved by Teams Worldwide',
-    subtitle: 'See what our customers have to say about AI Agent Platform',
+    subtitle: 'See what our customers have to say about ARISAL DIGITAL',
     companyLogos: [
       'TECHFLOW',
       'INNOVATE',
@@ -180,7 +181,7 @@ export const siteConfig = {
   // ============================================
   faq: {
     title: 'Frequently Asked Questions',
-    subtitle: 'Everything you need to know about AI Agent Platform',
+    subtitle: 'Everything you need to know about ARISAL DIGITAL',
   },
 
   // ============================================
@@ -229,7 +230,7 @@ export const siteConfig = {
   // ============================================
   footer: {
     tagline:
-      'Intelligent automation for modern teams. Transform your workflow with AI.',
+      'SOLUTION TO ALL OF YOUR DIGITAL SOLUTION. Transform your workflow with AI.',
     columns: [
       {
         title: 'Product',
@@ -268,6 +269,6 @@ export const siteConfig = {
       { name: 'Dribbble', href: '#', icon: 'dribbble' },
       { name: 'LinkedIn', href: '#', icon: 'linkedin' },
     ],
-    copyright: `${new Date().getFullYear()} AI Agent Platform. All rights reserved.`,
+    copyright: `${new Date().getFullYear()} ARISAL DIGITAL. All rights reserved.`,
   },
 };

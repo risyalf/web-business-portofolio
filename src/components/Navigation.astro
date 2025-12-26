@@ -10,7 +10,14 @@ import { Icon } from 'astro-icon/components';
     <div class="flex h-16 items-center justify-between">
       <div class="flex items-center">
         <a href="/" class="text-mono-black text-xl font-bold"
-          >{siteConfig.site.name}</a
+          >
+          <!-- {siteConfig.site.name} -->
+          <img
+            src={siteConfig.site.logo}
+            alt="logo"
+            class="h-80 w-auto mt-4"
+          />
+          </a
         >
       </div>
 
