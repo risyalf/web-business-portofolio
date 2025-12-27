@@ -75,7 +75,7 @@ import { Icon } from 'astro-icon/components';
             />
           </div>
 
-          <div>
+          <!-- <div>
             <label
               for="company"
               class="text-mono-black mb-2 block text-sm font-semibold"
@@ -88,7 +88,7 @@ import { Icon } from 'astro-icon/components';
               class="border-mono-lighter w-full rounded-lg border px-4 py-3"
               placeholder={siteConfig.contact.form.fields.company.placeholder}
             />
-          </div>
+          </div> -->
 
           <div>
             <label
@@ -129,6 +129,23 @@ import { Icon } from 'astro-icon/components';
     if (contactForm) {
       contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
+        const name = document.getElementById("name")?.value;
+        const email = document.getElementById("email")?.value;
+        const message = document.getElementById("message")?.value;
+
+        const phone = '+6282136307928';
+
+        const payload = `
+          Name: ${name}
+          Email: ${email}
+          Message: ${message}
+        `;
+
+        window.open(
+          `https://wa.me/${phone}?text=${encodeURIComponent(payload)}`,
+          "_blank"
+        );
+      
         alert('Thank you for your message! We will get back to you soon.');
         contactForm.reset();
       });

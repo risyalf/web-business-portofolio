@@ -7,8 +7,8 @@ export const siteConfig = {
   // SITE METADATA & SEO
   // ============================================
   site: {
-    name: 'ARISAL DIGITAL',
-    title: 'ARISAL DIGITAL - SOLUTION TO ALL OF YOUR DIGITAL SOLUTION',
+    name: 'ALRIS DIGITAL',
+    title: 'ALRIS DIGITAL - SOLUTION TO ALL OF YOUR DIGITAL SOLUTION',
     description:
       'Transform your business with autonomous AI agents. Automate workflows, integrate seamlessly, and scale effortlessly. Start free today.',
     keywords:
@@ -16,11 +16,11 @@ export const siteConfig = {
     email: 'hello@aiagentplatform.com',
 
     // Open Graph / Twitter
-    ogTitle: 'ARISAL DIGITAL - Intelligent Automation',
+    ogTitle: 'ALRIS DIGITAL - Intelligent Automation',
     ogDescription:
       'Transform your business with autonomous AI agents that work 24/7',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'ARISAL DIGITAL',
+    twitterTitle: 'ALRIS DIGITAL',
     twitterDescription: 'SOLUTION TO ALL OF YOUR DIGITAL SOLUTION',
     logo: '/logo.png'
   },
@@ -30,8 +30,8 @@ export const siteConfig = {
   // ============================================
   navigation: {
     links: [
-      { name: 'Features', href: '#features' },
-      { name: 'How It Works', href: '#how-it-works' },
+      { name: 'Services', href: '#features' },
+      { name: 'Portofolio', href: '#portofolios' },
       { name: 'Pricing', href: '#pricing' },
       { name: 'FAQ', href: '#faq' },
     ],
@@ -70,9 +70,27 @@ export const siteConfig = {
   // FEATURES SECTION
   // ============================================
   features: {
-    title: 'Powerful Capabilities',
+    title: 'Our Services',
     subtitle:
-      'Everything you need to build, deploy, and scale intelligent automation',
+      'We help you create a beautiful, functional website that drives real business results.',
+    items: [
+      { icon: 'lightning', title: 'Autonomous Execution' },
+      { icon: 'code', title: 'Smart Integration' },
+      { icon: 'chart', title: 'Real-Time Analytics' },
+      { icon: 'chat', title: 'Natural Language' },
+      { icon: 'shield', title: 'Enterprise Security' },
+      { icon: 'clock', title: '24/7 Operation' },
+      { icon: 'brush', title: 'Custom Workflows' },
+      { icon: 'layers', title: 'Multi-Agent Teams' },
+      { icon: 'zap', title: 'Instant Scaling' },
+    ],
+  },
+
+  // ============================================
+  // PORTOFOLIO SECTION
+  // ============================================
+  portofolios: {
+    title: 'Our Portofolios',
     items: [
       { icon: 'lightning', title: 'Autonomous Execution' },
       { icon: 'code', title: 'Smart Integration' },
@@ -99,7 +117,7 @@ export const siteConfig = {
   // ============================================
   testimonials: {
     title: 'Loved by Teams Worldwide',
-    subtitle: 'See what our customers have to say about ARISAL DIGITAL',
+    subtitle: 'See what our customers have to say about ALRIS DIGITAL',
     companyLogos: [
       'TECHFLOW',
       'INNOVATE',
@@ -181,7 +199,7 @@ export const siteConfig = {
   // ============================================
   faq: {
     title: 'Frequently Asked Questions',
-    subtitle: 'Everything you need to know about ARISAL DIGITAL',
+    subtitle: 'Everything you need to know about ALRIS DIGITAL',
   },
 
   // ============================================
@@ -190,16 +208,16 @@ export const siteConfig = {
   contact: {
     title: 'Start Building Today',
     subtitle:
-      'Join thousands of teams using AI agents to automate their workflows. Get started in minutes with our free tier.',
+      'Let’s build a powerful digital presence for your business. Contact us today and start your web transformation.',
     benefits: [
-      'No credit card required',
-      'Setup in under 5 minutes',
-      'Cancel anytime',
-      '24/7 customer support',
+      'Free consultation — no commitment required',
+      'Fully responsive and mobile-friendly design',
+      'Fast delivery with professional quality',
+      'Ongoing support and maintenance options',
     ],
-    email: 'hello@aiagentplatform.com',
+    email: 'risyalfebrianto97@gmail.com',
     form: {
-      cta: 'Get Started Free',
+      cta: 'Send Via Whatsapp',
       fields: {
         name: {
           label: 'Full Name',
@@ -217,8 +235,8 @@ export const siteConfig = {
           required: false,
         },
         message: {
-          label: 'What would you like to automate?',
-          placeholder: 'Tell us about your workflow and automation needs...',
+          label: 'What Would You Like To Build?',
+          placeholder: 'Tell us about your website needs — type of website, features, budget, and timeline...',
           required: false,
         },
       },
@@ -230,16 +248,16 @@ export const siteConfig = {
   // ============================================
   footer: {
     tagline:
-      'SOLUTION TO ALL OF YOUR DIGITAL SOLUTION. Transform your workflow with AI.',
+      'Solution to all of your digital solution.',
     columns: [
       {
         title: 'Product',
         links: [
-          { name: 'Features', href: '#features' },
+          { name: 'Services', href: '#features' },
+          { name: 'Portofolio', href: '#portofolios' },
           { name: 'Pricing', href: '#pricing' },
-          { name: 'Integrations', href: '#' },
-          { name: 'API Docs', href: '#' },
-          { name: 'Changelog', href: '#' },
+          // { name: 'API Docs', href: '#' },
+          // { name: 'Changelog', href: '#' },
         ],
       },
       {
@@ -269,6 +287,6 @@ export const siteConfig = {
       { name: 'Dribbble', href: '#', icon: 'dribbble' },
       { name: 'LinkedIn', href: '#', icon: 'linkedin' },
     ],
-    copyright: `${new Date().getFullYear()} ARISAL DIGITAL. All rights reserved.`,
+    copyright: `${new Date().getFullYear()} ALRIS DIGITAL. All rights reserved.`,
   },
 };

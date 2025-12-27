@@ -1,32 +1,32 @@
 export const faqItems = [
   {
-    question: 'What is an AI agent and how does it work?',
+    question: 'What kind of websites can you build?',
     answer:
-      'An AI agent is an autonomous software program that can understand instructions, make decisions, and perform tasks on your behalf. Our agents use advanced language models to interpret your goals, connect with your tools, and execute complex workflows automatically—learning and improving over time.',
+      'We develop a wide range of websites, including landing pages, company profiles, e-commerce stores, blogs, dashboards, and custom web applications. Every project is tailored to your business goals and needs.',
   },
   {
-    question: 'Do I need coding knowledge to use this platform?',
+    question: 'How long does it take to build a website?',
     answer:
-      'Not at all! Our platform is designed for everyone. You configure agents using natural language—just describe what you want in plain English. The AI handles all the technical complexity behind the scenes. That said, developers can also access advanced features and APIs for custom integrations.',
+      'Development time depends on project complexity. Simple websites can take 1–3 weeks, while more advanced platforms may require 1–2 months. We always provide a clear timeline before starting the project.',
   },
   {
-    question: 'How secure is my data?',
+    question: 'Will my website be responsive and mobile-friendly?',
     answer:
-      'Security is our top priority. We use bank-level encryption (AES-256) for data at rest and in transit, are SOC 2 Type II certified, and maintain strict access controls. Your data is never used to train AI models, and we offer enterprise options including on-premise deployment for maximum control.',
+      'Yes. Every website we build is fully responsive and optimized for all devices, including desktop, tablet, and mobile, ensuring a smooth and consistent user experience.',
   },
   {
-    question: 'Can I integrate with my existing tools?',
+    question: 'Do you provide ongoing support and maintenance?',
     answer:
-      'Yes! We support 1000+ integrations including Slack, Microsoft Teams, Gmail, Salesforce, HubSpot, databases, and custom APIs. Most integrations take just a few clicks to set up. If you need a custom integration, our Enterprise plan includes dedicated support to build exactly what you need.',
+      'Absolutely. We offer optional maintenance and support plans to help you with updates, bug fixes, performance improvements, and security monitoring after launch.',
   },
   {
-    question: "What happens if I exceed my plan's task limit?",
+    question: 'Can you help with hosting and domain setup?',
     answer:
-      "We'll notify you when you approach your limit. You can upgrade to a higher plan anytime, or purchase additional task packs. Your agents won't stop working—we'll never leave you hanging mid-workflow. We believe in flexible, fair pricing that grows with your needs.",
+      'Yes. We can assist with domain registration, hosting recommendations, and full deployment to ensure your website is live, secure, and running smoothly.',
   },
   {
-    question: 'Can I cancel my subscription anytime?',
+    question: 'Will my website be optimized for SEO?',
     answer:
-      "Absolutely. You can cancel anytime with no penalties or fees. You'll retain access until the end of your billing period, and you can export all your data and configurations. We're confident you'll love the platform, but we never lock you in.",
+      'Yes. We follow SEO best practices including clean structure, performance optimization, metadata setup, and mobile optimization to help your website rank better on search engines.',
   },
 ];
