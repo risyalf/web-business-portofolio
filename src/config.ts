@@ -8,21 +8,21 @@ export const siteConfig = {
   // ============================================
   site: {
     name: 'ALRIS DIGITAL',
-    title: 'ALRIS DIGITAL - SOLUTION TO ALL OF YOUR DIGITAL SOLUTION',
+    title: 'ALRIS DIGITAL — Jasa Pembuatan Website, Web App & Solusi Digital',
     description:
-      'Transform your business with autonomous AI agents. Automate workflows, integrate seamlessly, and scale effortlessly. Start free today.',
+      'ALRIS DIGITAL melayani jasa pembuatan website profesional, aplikasi web kustom, sistem ERP, CBT, dan solusi transformasi digital berkinerja tinggi untuk bisnis Anda.',
     keywords:
-      'AI agents, automation, workflow automation, AI platform, business automation',
-    email: 'hello@aiagentplatform.com',
+      'jasa pembuatan website, web developer profesional, software house semarang, aplikasi web kustom, sistem erp, cbt online, alris digital, high performance website',
+    email: 'risyalfebrianto97@gmail.com',
 
     // Open Graph / Twitter
-    ogTitle: 'ALRIS DIGITAL - Intelligent Automation',
+    ogTitle: 'ALRIS DIGITAL — Modern Web Solutions & Enterprise Engineering',
     ogDescription:
-      'Transform your business with autonomous AI agents that work 24/7',
+      'Jasa pembuatan website profesional, sistem informasi bisnis, dan aplikasi web kustom dengan performa tinggi & desain modern.',
     twitterCard: 'summary_large_image',
-    twitterTitle: 'ALRIS DIGITAL',
-    twitterDescription: 'SOLUTION TO ALL OF YOUR DIGITAL SOLUTION',
-    logo: '/logo.png'
+    twitterTitle: 'ALRIS DIGITAL — Web Solutions & Software Engineering',
+    twitterDescription: 'Solusi pembuatan website profesional dan sistem bisnis modern.',
+    logo: '/logo.png',
   },
 
   // ============================================
@@ -56,13 +56,13 @@ export const siteConfig = {
       },
       secondary: {
         text: 'Our Portofolio',
-        href: '#features',
+        href: '#portofolios',
       },
     },
     stats: [
-      { value: '10k+', label: 'Active Agents' },
-      { value: '99.9%', label: 'Uptime' },
-      { value: '5M+', label: 'Tasks Automated' },
+      { value: '5+', label: 'Enterprise Platforms' },
+      { value: '99.9%', label: 'Uptime Target' },
+      { value: '100%', label: 'Client Satisfaction' },
     ],
   },
 
@@ -255,41 +255,26 @@ export const siteConfig = {
       'Solution to all of your digital solution.',
     columns: [
       {
-        title: 'Product',
+        title: 'Layanan',
         links: [
-          { name: 'Services', href: '#features' },
+          { name: 'Web Development', href: '#features' },
+          { name: 'Custom ERP & CBT', href: '#features' },
           { name: 'Portofolio', href: '#portofolios' },
-          { name: 'Pricing', href: '#pricing' },
-          // { name: 'API Docs', href: '#' },
-          // { name: 'Changelog', href: '#' },
+          { name: 'Paket Harga', href: '#pricing' },
         ],
       },
       {
-        title: 'Company',
+        title: 'Navigasi',
         links: [
-          { name: 'About Us', href: '#' },
-          { name: 'Blog', href: '#' },
-          { name: 'Careers', href: '#' },
-          { name: 'Press Kit', href: '#' },
-          { name: 'Contact', href: '#contact' },
-        ],
-      },
-      {
-        title: 'Legal',
-        links: [
-          { name: 'Privacy Policy', href: '#' },
-          { name: 'Terms of Service', href: '#' },
-          { name: 'Cookie Policy', href: '#' },
-          { name: 'Security', href: '#' },
-          { name: 'Compliance', href: '#' },
+          { name: 'FAQ', href: '#faq' },
+          { name: 'Konsultasi Gratis', href: '#contact' },
+          { name: 'Studi Kasus', href: '#portofolios' },
         ],
       },
     ],
     social: [
-      { name: 'Twitter', href: '#', icon: 'twitter' },
-      { name: 'GitHub', href: '#', icon: 'github' },
-      { name: 'Dribbble', href: '#', icon: 'dribbble' },
-      { name: 'LinkedIn', href: '#', icon: 'linkedin' },
+      { name: 'GitHub', href: 'https://github.com/risyalf', icon: 'github' },
+      { name: 'LinkedIn', href: 'https://www.linkedin.com/in/risyal-febrianto/', icon: 'linkedin' },
     ],
     copyright: `${new Date().getFullYear()} ALRIS DIGITAL. All rights reserved.`,
   },

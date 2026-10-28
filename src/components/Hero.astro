@@ -3,21 +3,24 @@ import { siteConfig } from '../config.ts';
 ---
 
 <section
-  class="mono-mesh to-mono-lighter relative bg-gradient-to-b from-white px-4 pt-32 pb-20 sm:px-6 lg:px-8"
+  id="hero"
+  class="mono-mesh to-mono-lighter relative bg-gradient-to-b from-white px-4 pt-28 pb-16 sm:px-6 lg:px-8"
 >
-  <!-- <div class="bg-mono-black absolute top-32 left-0 h-32 w-1 mt-50"></div>
-  <div class="bg-mono-black absolute top-32 right-0 h-32 w-1 mt-50"></div> -->
+  <div class="mx-auto max-w-7xl mt-8 sm:mt-12">
+    <div class="mx-auto max-w-4xl text-center">
+      <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-mono-lighter bg-white/80 px-3.5 py-1 text-xs font-semibold text-mono-dark backdrop-blur-sm">
+        <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        Available for Web & Enterprise Projects
+      </div>
 
-  <div class="mx-auto max-w-7xl mt-50">
-    <div class="mx-auto max-w-10xl text-center">
       <h1
-        class="text-mono-black scroll-fade-up mb-6 text-5xl leading-tight font-extrabold sm:text-6xl lg:text-7xl"
+        class="text-mono-black scroll-fade-up mb-6 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight"
       >
         {siteConfig.hero.headline}<br />
         <span class="text-mono-darker">{siteConfig.hero.subheadline}</span>
       </h1>
       <p
-        class="text-mono-dark scroll-fade-up mb-10 text-xl leading-relaxed sm:text-2xl"
+        class="text-mono-dark scroll-fade-up mb-10 text-lg sm:text-xl lg:text-2xl leading-relaxed"
       >
         {siteConfig.hero.description}
       </p>
@@ -26,33 +29,33 @@ import { siteConfig } from '../config.ts';
       >
         <a
           href={siteConfig.hero.cta.primary.href}
-          class="bg-mono-black rounded-lg px-8 py-4 font-semibold text-white shadow-lg"
+          class="bg-mono-black hover:bg-mono-dark rounded-xl px-8 py-4 font-semibold text-white shadow-lg transition-all"
         >
           {siteConfig.hero.cta.primary.text}
         </a>
         <a
           href={siteConfig.hero.cta.secondary.href}
-          class="border-mono-black text-mono-black rounded-lg border-2 bg-white px-8 py-4 font-semibold"
+          class="border-mono-black text-mono-black hover:bg-mono-lighter/40 rounded-xl border-2 bg-white px-8 py-4 font-semibold transition-all"
         >
           {siteConfig.hero.cta.secondary.text}
         </a>
       </div>
 
       <div
-        class="border-mono-lighter mx-auto grid max-w-3xl grid-cols-3 gap-8 border-t pt-20"
+        class="border-mono-lighter mx-auto grid max-w-3xl grid-cols-1 sm:grid-cols-3 gap-8 border-t pt-12"
       >
-        <!-- {
+        {
           siteConfig.hero.stats.map((stat, index) => (
-            <div class={`float scroll-fade-up stagger-${index + 1}`}>
-              <div class="text-mono-black mb-2 text-4xl font-bold">
+            <div class={`scroll-fade-up stagger-${index + 1}`}>
+              <div class="text-mono-black mb-1 text-3xl sm:text-4xl font-extrabold tracking-tight">
                 {stat.value}
               </div>
-              <div class="text-mono-gray text-sm tracking-wide uppercase">
+              <div class="text-mono-gray text-xs sm:text-sm tracking-wider uppercase font-medium">
                 {stat.label}
               </div>
             </div>
           ))
-        } -->
+        }
       </div>
     </div>
   </div>

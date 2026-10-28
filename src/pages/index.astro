@@ -4,47 +4,90 @@ import { siteConfig } from '../config.ts';
 import Navigation from '../components/Navigation.astro';
 import Hero from '../components/Hero.astro';
 import Features from '../components/Features.astro';
-import HowItWorks from '../components/HowItWorks.astro';
 import Testimonials from '../components/Testimonials.astro';
 import Pricing from '../components/Pricing.astro';
 import FAQ from '../components/FAQ.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 import Portofolio from '../components/Portofolio.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'ALRIS DIGITAL',
+  image: 'https://alrisdigital.web.id/screenshot.jpeg',
+  '@id': 'https://alrisdigital.web.id/#organization',
+  url: 'https://alrisdigital.web.id/',
+  telephone: '+6281228514574',
+  priceRange: 'Rp750.000 - Custom',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Semarang',
+    addressRegion: 'Jawa Tengah',
+    addressCountry: 'ID',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: -6.966667,
+    longitude: 110.416664,
+  },
+  description: siteConfig.site.description,
+  founder: {
+    '@type': 'Person',
+    name: 'Risyal Febrianto',
+    jobTitle: 'Senior Full-Stack & System Engineer',
+    url: 'https://github.com/risyalf',
+  },
+  sameAs: [
+    'https://github.com/risyalf',
+    'https://www.linkedin.com/in/risyal-febrianto/',
+  ],
+};
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://alrisdigital.web.id/" />
 
     <title>{siteConfig.site.title}</title>
     <meta name="description" content={siteConfig.site.description} />
     <meta name="keywords" content={siteConfig.site.keywords} />
+    <meta name="author" content="ALRIS DIGITAL" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alrisdigital.web.id/" />
+    <meta property="og:site_name" content={siteConfig.site.name} />
+    <meta property="og:locale" content="id_ID" />
     <meta property="og:title" content={siteConfig.site.ogTitle} />
     <meta property="og:description" content={siteConfig.site.ogDescription} />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/screenshot.jpeg" />
+    <meta property="og:image" content="https://alrisdigital.web.id/screenshot.jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ALRIS DIGITAL Platform Preview" />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content={siteConfig.site.twitterCard} />
+    <meta name="twitter:url" content="https://alrisdigital.web.id/" />
     <meta name="twitter:title" content={siteConfig.site.twitterTitle} />
-    <meta
-      name="twitter:description"
-      content={siteConfig.site.twitterDescription}
-    />
-    <meta name="twitter:image" content="/og-image.png" />
+    <meta name="twitter:description" content={siteConfig.site.twitterDescription} />
+    <meta name="twitter:image" content="https://alrisdigital.web.id/screenshot.jpeg" />
 
+    <!-- Google Fonts with display=optional to eliminate layout shifts (CLS) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=optional"
       rel="stylesheet"
     />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
 
   <body class="text-mono-black bg-white font-sans antialiased">
@@ -52,7 +95,6 @@ import Portofolio from '../components/Portofolio.astro';
     <Hero />
     <Features />
     <Portofolio />
-    <!-- <HowItWorks /> -->
     <Testimonials />
     <Pricing />
     <FAQ />
@@ -63,7 +105,7 @@ import Portofolio from '../components/Portofolio.astro';
       document.addEventListener('DOMContentLoaded', () => {
         const observerOptions = {
           threshold: 0.1,
-          rootMargin: '0px 0px -100px 0px',
+          rootMargin: '0px 0px -50px 0px',
         };
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {

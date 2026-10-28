@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alrisdigital.web.id/sitemap.xml
